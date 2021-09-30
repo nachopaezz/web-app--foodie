@@ -1,7 +1,4 @@
-const { Model, DataTypes } = require('sequelize');
-
-// Exportamos una funcion que define el modelo
-// Luego le injectamos la conexion a sequelize.
+const { Model, DataTypes } = require("sequelize");
 
 module.exports = sequelize => {
   class Diet extends Model {}
@@ -16,5 +13,3 @@ module.exports = sequelize => {
     return diet;
   });
 };
-
-
