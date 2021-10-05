@@ -1,41 +1,11 @@
-const express = require('express')
-const router = express.Router()
-const axios = require('axios');
-require('dotenv').config();
-const { Recipe, Diet, Op } = require('../db');
+const { Router } = require("express");
+const {addRecipe, getRecipeById, getAllRecipes} = require("../controllers/Recipe")
 
-router.post('/', async (req, res) => {
-    let{
-        name,
-        summary,
-        score,
-        healthScore,
-        image,
-        steps,
-        diets
-    } = req.body
+const router = Router()
 
-    try{
-        let recipeCreate = await Recipe.create({
-            name,
-            summary,
-            score,
-            healthScore,
-            image,
-            steps,
-        })
-
-        let dietDB = await Diet.findAll({
-            where: {name: diets}
-        })
-
-        recipeCreate.addDiet(dietDB)
-        res.send('Succesfull')
-    }catch(error){
-        res.status(400).json({message: error?.message | 'Error en carga de datos'})
-    }
-})
+router.get("/recipes", getAllRecipes)
+router.get('/recipes/:id', getRecipeById)
+router.post("/recipe", addRecipe)
 
 
-
-module.exports = router
+module.exports = router;
