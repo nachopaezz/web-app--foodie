@@ -1,15 +1,13 @@
-const { Model, DataTypes } = require("sequelize");
+const { DataTypes } = require('sequelize');
+// Exportamos una funcion que define el modelo
+// Luego le injectamos la conexion a sequelize.
+module.exports = (sequelize) => {
+  // defino el modelo
+  sequelize.define('diet', {
 
-module.exports = sequelize => {
-  class Diet extends Model {}
-  Diet.init(
-    {
-      name: { type: DataTypes.STRING, allowNull: false, unique: true },
-    },
-    { sequelize: sequelize, modelName: "Diet", timestamps: false }
-  );
-  Diet.beforeCreate(function (diet) {
-    diet.name = diet.name.toLowerCase();
-    return diet;
-  });
-};
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+  })
+}
