@@ -1,0 +1,30 @@
+.nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background:rgb(56,96,171);
+  justify-content: space-around;
+  color: white;
+  border-radius: 0px 0px 100px 0px;
+}
+
+.titulo{
+display: flex;
+align-items: center;
+font-weight:600;
+flex-direction: column;
+opacity: 1px;
+width: 250px;
+height: 115px;
+}
+
+.foodhub{
+  font: Montserrat;
+  font-size: 60px;
+  color:white;
+}
+
+.inicio{
+  font: Montserrat;
+  color: white;
+}
