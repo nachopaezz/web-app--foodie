@@ -8,7 +8,7 @@ function Nav({ onSearch }) {
     <nav className="nav">
       <NavLink to="/">
         <span className="titulo">
-          <div className="foodhub">FoodHub</div>
+          <div className="foodhub"><b>FoodHub</b></div>
           <div className="inicio">Entry</div>
         </span>
       </NavLink>

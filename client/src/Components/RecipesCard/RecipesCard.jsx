@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import { connect } from 'react-redux';
 import { getRecipes } from '../../actions/index';
-import "../../index.css";
+import "../RecipesCard/RecipesCard.css";
 import { NavLink } from 'react-router-dom';
 import Filter from '../Filter/Filter';
 
@@ -13,10 +13,10 @@ const renderData = (recipes) => {
                 return <div key={recipe.id} className="card">
                     <NavLink to={`/home/${recipe.id}`}>
                         <img src={recipe.image} alt="Foto de la receta" className="Foto"></img>
-                        <p className="recipeName">{recipe.title}</p></NavLink>
+                        <p className="recipeName"><b>{recipe.title}</b></p></NavLink>
                     <p>Types of Diet: {recipe.diets.length !== 0? recipe.diets.map(diet => Object.values(diet)).join(", ").toLowerCase(): "Not available"}</p>
                 </div>
-            }) : <div className="no">No recipes available!</div>}</div>)
+            }) : <div className="no">No available!</div>}</div>)
 }
 
 function PaginationComponent({ recipes, getRecipes }) {
@@ -25,12 +25,12 @@ function PaginationComponent({ recipes, getRecipes }) {
     }
     useEffect(() => {
         getRecipesFunction()
-    }, [])
+    } )
 
-    const [render, setRender] = useState(recipes)
+    useState(recipes)
 
     const [currentPage, setcurrentPage] = useState(1);
-    const [itemsPerPage, setitemsPerPage] = useState(9);
+    const [itemsPerPage] = useState(9);
 
     const [pageNumberLimit] = useState(5);
     const [maxPageNumberLimit, setmaxPageNumberLimit] = useState(5);
@@ -96,7 +96,7 @@ function PaginationComponent({ recipes, getRecipes }) {
 
     return (
         <div><Filter />
-            <h1 className="titleAll">All Recipes</h1> <br />
+            <h1 className="titleAll"><b>All Recipes</b></h1> <br />
             {renderData(currentItems)}
             <ul className="pageNumbers">
                 <li>

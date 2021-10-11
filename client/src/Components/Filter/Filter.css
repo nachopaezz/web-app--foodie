@@ -1,0 +1,51 @@
+.filter {
+  background: #202072;
+  opacity: 90%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.espaciado {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px;
+}
+
+.margen {
+  margin: 10px;
+}
+
+.creacion {
+  border: none;
+  cursor: pointer;
+  color: #202072;
+  background: white;
+  border-radius: 70px;
+  width: 260px;
+  height: 40px;
+  font-family: Montserrat;
+  opacity: 1;
+  position: absolute;
+  top: 140px;
+  left: 100px;
+}
+.creacion:hover {
+    transform: translateY(-2px);
+  }
+
+.refresh {
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: #202072 0% 0% no-repeat padding-box;
+  border-radius: 70px;
+  width: 260px;
+  height: 60px;
+  text-align: center;
+  font: normal normal 300 30px/49px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}

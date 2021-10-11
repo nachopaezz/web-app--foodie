@@ -16,7 +16,7 @@
   right: 550px;
   font-family: Montserrat;
   font-size: 50px;
-  color: rgb(56,96,171);
+  color: #202072;
   -webkit-text-stroke: 1px white;
   opacity: 1;
   transform: translateY(3rem);
@@ -34,7 +34,7 @@
   font-weight: 500;
   color: white;
   border-color: white;
-  background-color: rgb(72, 134, 49);
+  background-color: #202072;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
@@ -45,8 +45,8 @@
 }
 
 .boton:hover {
-  background-color: greenyellow;
-  box-shadow: 0px 15px 20px rgba(85, 90, 54, 0.582);
-  color: rgb(46, 96, 27);
+  background-color: white;;
+  box-shadow: 0px 15px 20px grey;
+  color: #202072;
   transform: translateY(2px);
 }

@@ -40,7 +40,7 @@ function Filter(props) {
             <div className="filter">
                 <NavLink to='/recipe'>
                     <button className="creacion">
-                        Create Recipe
+                        <b>Create Recipe</b>
                     </button>
                 </NavLink>
                 <form className="espaciado">
