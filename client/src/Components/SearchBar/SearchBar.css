@@ -18,7 +18,7 @@
   background-color: #202072;
   border-radius: 70px;
   top: 44px;
-  left: 1135px;
+  left: 1170px;
   width: 42px;
   height: 42px;
   font-size: 15px;
@@ -28,7 +28,6 @@
 }
 .searchButton:hover{
   background-color: white;
-  box-shadow: 0px 5px 5px grey;
 }
 
 .buttonIn {

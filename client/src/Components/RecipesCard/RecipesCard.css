@@ -68,12 +68,12 @@
   box-shadow: 1px 10px 20px black;
 }
 
-.titleAll {
+.welcome {
   top: 326px;
   left: 46px;
   width: 1330px;
   height: 50px;
-  font: normal normal normal 35px/86px Montserrat;
+  font: normal normal normal 25px/86px Montserrat;
   color: #202072;
   opacity: 1;
 }

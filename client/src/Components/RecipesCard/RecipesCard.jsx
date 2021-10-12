@@ -25,7 +25,7 @@ function PaginationComponent({ recipes, getRecipes }) {
     }
     useEffect(() => {
         getRecipesFunction()
-    } )
+    }, [] )
 
     useState(recipes)
 
@@ -96,7 +96,7 @@ function PaginationComponent({ recipes, getRecipes }) {
 
     return (
         <div><Filter />
-            <h1 className="titleAll"><b>All Recipes</b></h1> <br />
+            <h1 className="welcome"><b>Welcome to FoodHub!</b></h1> <br />
             {renderData(currentItems)}
             <ul className="pageNumbers">
                 <li>

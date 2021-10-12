@@ -1,0 +1,69 @@
+.nombre {
+  color: #202072;
+}
+
+.detail{
+background-color: rgb(252,246,248);
+opacity: 90%;
+}
+
+.foto {
+  border-radius: 50px;
+}
+
+.dietsPhotoSummary {
+  font: normal normal 300 16px/30px Montserrat;
+  color: #202072;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 50px;
+  padding: 10px;
+}
+
+.dietsDetail {
+  text-align: center;
+  font: normal normal 300 18px/30px Montserrat;
+  color: #202072;
+  position: absolute;
+  left: 630px;
+  top: 640px;
+}
+
+.scoresDetail {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 200px;
+  top: 640px;
+  font: normal normal 300 18px/30px Montserrat;
+  color: #202072;
+}
+
+.stepsInstructions {
+  font: normal normal 300 20px/30px Montserrat;
+  color: #202072;
+  width: 900px;
+  margin-left: 120px;
+  padding-top: 1px;
+}
+
+.botonBackDetail {
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: #202072;
+  border-radius: 70px;
+  width: 260px;
+  height: 40px;
+  font-family: Montserrat;
+  opacity: 1;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.botonBackDetail:hover {
+  box-shadow: 0px 15px 20px black;
+  transform: translateY(-4px);
+}
