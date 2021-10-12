@@ -52,15 +52,15 @@ function Filter(props) {
                     </select>
                 </form>
                 <form className="espaciado">
-                    <p>Order alphabetically</p>
+                    <p>Order A-Z / Z-A</p>
                     <select onChange={handleOrder} className="margen">
                         <option value='Reset'>Unordered</option>
-                        <option value='ASC'>Ascendant</option>
-                        <option value='DESC'>Descendant</option>
+                        <option value='ASC'>A-Z</option>
+                        <option value='DESC'>Z-A</option>
                     </select>
                 </form>
                 <form className="espaciado">
-                    <p>Filter by Type Diets</p>
+                    <p>Filter by Diet Type</p>
                     <select onChange={handleFilter} className="margen">
                         <option value='All'>All</option>
                         {props.diets.length !== 0 ? props.diets.map((e) => (

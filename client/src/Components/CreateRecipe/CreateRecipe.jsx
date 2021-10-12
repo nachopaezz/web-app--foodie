@@ -91,11 +91,11 @@ function Form(props) {
     <div>
       <h1 className="create">Your Recipe:</h1>
       <div className="formulario">
-        <p className="redSub">(*) Please fill in the required field</p>
+        <p className="redSub">(*) Required fields</p>
         <form onSubmit={(e) => onSubmit(e)} className="form1">
           <div className="columnasForm">
             <div className="tamañoInput">
-              <label>Title (*) </label>
+              <label><b>Title</b> (*) </label>
               <input
                 type="text"
                 name="title"
@@ -107,7 +107,7 @@ function Form(props) {
               {errors.title && <p className="red">{errors.title}</p>}
             </div>
             <div className="tamañoInput">
-              <label>Summary (*) </label>
+              <label><b>Summary</b> (*) </label>
               <textarea
                 name="summary"
                 onChange={handleInputChange}
@@ -136,7 +136,7 @@ function Form(props) {
               )}
             </div>
             <div className="tamañoInput">
-              <label>Health Score (*)</label>
+              <label><b>Health Score </b> (*)</label>
               <input
                 type="number"
                 name="healthScore"
@@ -154,7 +154,7 @@ function Form(props) {
           </div>
           <div className="columnasForm">
             <div className="tamañoInput">
-              <label>Steps </label>
+              <label><b>Steps </b></label>
               <textarea
                 name="instructions"
                 onChange={handleInputChange}
@@ -165,7 +165,7 @@ function Form(props) {
               />
             </div>
             <div className="tamañoInput">
-              <label>Select the types of diets</label>
+              <label><b>Select the types of diets</b></label>
               {props.diets.length !== 0 ? (
                 <div className="cajitas">
                   {" "}
@@ -189,7 +189,7 @@ function Form(props) {
           </div>
           <div className="columnasForm">
             <div className="ultimoInput">
-              <label>Image </label>
+              <label><b>Image</b> </label>
               <input
                 type="url"
                 name="image"
@@ -201,7 +201,7 @@ function Form(props) {
             <input type="submit" value="Add Recipe" className="botonAgregar" />
           </div>
           <NavLink to="/home">
-            <button className="botonBack">Back</button>
+            <button className="botonBack">Back ↺</button>
           </NavLink>
         </form>
       </div>

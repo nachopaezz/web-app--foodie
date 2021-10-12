@@ -59,12 +59,13 @@
   background-color: rgb(252,246,248);
   color: #202072;
   width: 400px;
-  height: 520px;
+  height: 420px;
   opacity: 90%;
+  margin: 10px;
 }
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 1px 10px 20px #202072;
+  transform: translateY(-2px);
+  box-shadow: 1px 10px 20px black;
 }
 
 .titleAll {
@@ -79,7 +80,7 @@
 
 .recipeName {
   text-align: center;
-  font: normal normal 300 25px/61px Montserrat;
+  font: normal normal 300 15px Montserrat;
   color: #202072;
   opacity: 1;
 }

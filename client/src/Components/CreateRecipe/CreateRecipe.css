@@ -1,9 +1,68 @@
-.create{
+.create {
+  color: white;
+  font-family: Montserrat;
+}
+
+.redSub {
+  color: red;
+}
+
+.caja{
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+}
+
+.cajitas{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 800px;
+  position: absolute;
+  left: 400px;
+  top: 700px;
+}
+
+.spaciar{
+  padding-right: 60px;
+}
+
+.botonAgregar {
+    border: none;
+    cursor: pointer;
     color: white;
+    background: #202072;
+    border-radius: 70px;
+    width: 260px;
+    height: 40px;
     font-family: Montserrat;
+    opacity: 1;
+    position: absolute;
+    top: 800px;
+    left: 400px;
 }
 
-.redSub{
-    color: red;
+.botonBack {
+    border: none;
+    cursor: pointer;
+    color: #202072;
+    background: white;
+    border-radius: 70px;
+    width: 260px;
+    height: 40px;
+    font-family: Montserrat;
+    opacity: 1;
+    position: absolute;
+    top: 800px;
+    left: 750px;
 }
 
+.botonAgregar:hover{
+  box-shadow: 0px 15px 20px grey;
+  transform: translateY(-4px);
+}
+
+.botonBack:hover{
+  box-shadow: 0px 15px 20px grey;
+  transform: translateY(-4px);
+}
