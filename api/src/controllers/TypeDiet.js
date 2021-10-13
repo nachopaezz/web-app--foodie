@@ -45,6 +45,7 @@ let diets = [
 	},
 ];
 
+// http://localhost:3001/types
 
 function getDiets(req, res, next) {
 	Diets.findAll()

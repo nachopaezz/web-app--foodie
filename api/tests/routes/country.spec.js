@@ -6,12 +6,12 @@ const { Recipe, conn } = require('../../src/db.js');
 
 const agent = session(app);
 const recipe = {
-  id:"e4efaec8-ea77-11eb-9a03-0242ac130003",
-  title: "Milanesa a la napolitana",
-  summary: "Milanesa recubierta con queso y salsa",
+  id:"07af2ef7-5ed2-4041-a5da-9196d99104cd",
+  title: "Choripan",
+  summary: "Sandwich de Chorizo",
   spoonacularScore: 100,
   healthScore: 40,
-  instructions: "Fritar"
+  instructions: "Asar"
 };
 
 describe('Recipe routes', () => {
