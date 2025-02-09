@@ -1,20 +1,12 @@
-# Individual Project - web app FOODIE
+# Web app FOODIE
 
 <p align="center">
   <img height="200" src="./cooking.png" />
 </p>
 
-## Objetivos del Proyecto
+## Proyecto
 
-- Construir una App utlizando React, Redux, Node y Sequelize.
-- Afirmar y conectar los conceptos aprendidos en la carrera.
-- Aprender mejores prácticas.
-- Aprender y practicar el workflow de GIT.
-- Usar y practicar testing.
-
-## Horarios y Fechas
-
-El proyecto tendrá una duración máxima de tres semanas. En el caso de que completan todas las tareas antes de dicho lapso podrán avisar a su Instructor para coordinar una fecha de presentación del trabajo (DEMO).
+- App creada utlizando React, Redux, Node y Sequelize.
 
 ## Comenzando
 
@@ -23,18 +15,10 @@ El proyecto tendrá una duración máxima de tres semanas. En el caso de que com
 
 Tendrán un `boilerplate` con la estructura general tanto del servidor como de cliente.
 
-__IMPORTANTE:__ Es necesario contar minimamente con la última versión estable de Node y NPM. Asegurarse de contar con ella para poder instalar correctamente las dependecias necesarias para correr el proyecto.
-
 Actualmente las versiónes necesarias son:
 
  * __Node__: 12.18.3 o mayor
  * __NPM__: 6.14.16 o mayor
-
-Para verificar que versión tienen instalada:
-
-> node -v
->
-> npm -v
 
 ## BoilerPlate
 
@@ -43,7 +27,7 @@ El boilerplate cuenta con dos carpetas: `api` y `client`. En estas carpetas esta
 En `api` crear un archivo llamado: `.env` que tenga la siguiente forma:
 
 ```
-DB_USER=usuariodepostgres
+DB_USER=usuariodepostgres 
 DB_PASSWORD=passwordDePostgres
 DB_HOST=localhost
 ```
@@ -105,7 +89,7 @@ __Ruta principal__: debe contener
 
 __IMPORTANTE__: Dentro de la Ruta Principal se deben mostrar tanto las recetas traidas desde la API como así también las de la base de datos. Debido a que en la API existen alrededor de 5 mil recetas, por cuestiones de performance pueden tomar la simplificación de obtener y paginar las primeras 100.
 
-__Ruta de detalle de receta__: debe contener
+__Ruta de detalle de receta__:
 - [ ] Los campos mostrados en la ruta principal para cada receta (imagen, nombre, tipo de plato y tipo de dieta)
 - [ ] Resumen del plato
 - [ ] Puntuación
@@ -146,8 +130,6 @@ __IMPORTANTE__: Pensar como modelar los IDs de las recetas en la base de datos. 
 
 Se debe desarrollar un servidor en Node/Express con las siguientes rutas:
 
-__IMPORTANTE__: No está permitido utilizar los filtrados, ordenamientos y paginados brindados por la API externa, todas estas funcionalidades tienen que implementarlas ustedes.
-
 - [ ] __GET /recipes?name="..."__:
   - Obtener un listado de las recetas que contengan la palabra ingresada como query parameter
   - Si no existe ninguna receta mostrar un mensaje adecuado
@@ -161,9 +143,3 @@ __IMPORTANTE__: No está permitido utilizar los filtrados, ordenamientos y pagin
 - [ ] __POST /recipe__:
   - Recibe los datos recolectados desde el formulario controlado de la ruta de creación de recetas por body
   - Crea una receta en la base de datos
-
-
-#### Testing
-- [ ] Al menos tener un componente del frontend con sus tests respectivos
-- [ ] Al menos tener una ruta del backend con sus tests respectivos
-- [ ] Al menos tener un modelo de la base de datos con sus tests respectivos
